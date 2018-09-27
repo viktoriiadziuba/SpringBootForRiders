@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-clearmin.min.css">
+        <link rel="stylesheet" type="text/css" href="css/roboto.css">
+        <link rel="stylesheet" type="text/css" href="css/material-design.css">
+        <link rel="stylesheet" type="text/css" href="css/small-n-flat.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <title>Все для вершника</title>
+    </head>
+    <body class="cm-no-transition cm-1-navbar">
+        <div id="cm-menu">
+            <nav class="cm-navbar cm-navbar-primary">
+                <div class="btn btn-primary md-menu-white" data-toggle="cm-menu"></div>
+            </nav>
+            <div id="cm-menu-content">
+                <div id="cm-menu-items-wrapper">
+                    <div id="cm-menu-scroller">
+                        <ul class="cm-menu-items">
+                            <li class="active"><a href="index.html" class="sf-house">Головна</a></li>
+                              <li class="cm-submenu">
+                                <a>Коні<span class="caret"></span></a>
+                                <ul>
+                                    <li><a href="all-horses.html">Переглянути</a></li>
+                                    <li><a href="add-horse.html">Додати</a></li>
+                                </ul>
+                            </li>
+                            <li class="cm-submenu">
+                                <a>Сідла<span class="caret"></span></a>
+                                <ul>
+                                    <li><a href="all-saddles.html">Переглянути</a></li>
+                                    <li><a href="add-saddle.html">Додати</a></li>
+                                </ul>
+                            </li>
+                            <li class="cm-submenu">
+                                <a>Взуття<span class="caret"></span></a>
+                                <ul>
+                                    <li><a href="all-boots.html">Переглянути</a></li>
+                                    <li><a href="add-boots.html">Додати</a></li>
+                                </ul>
+                            </li>
+                            <li class="cm-submenu">
+                                <a>Штани<span class="caret"></span></a>
+                                <ul>
+                                    <li><a href="all-breeches.html">Переглянути</a></li>
+                                    <li><a href="add-breeches.html">Додати</a></li>
+                                </ul>
+                            </li>
+                            <li class="cm-submenu">
+                                <a>Краги<span class="caret"></span></a>
+                                <ul>
+                                    <li><a href="all-half-chaps.html">Переглянути</a></li>
+                                    <li><a href="add-half-chaps.html">Додати</a></li>
+                                </ul>
+                            </li>
+                            <li class="cm-submenu">
+                                <a>Шоломи<span class="caret"></span></a>
+                                <ul>
+                                    <li><a href="all-helmets.html">Переглянути</a></li>
+                                    <li><a href="add-helmet.html">Додати</a></li>
+                                </ul>
+                            </li>
+                            <li class="cm-submenu">
+                                <a>Інша амуніція для коня<span class="caret"></span></a>
+                                <ul>
+                                    <li><a href="all-horse-ammunition.html">Переглянути</a></li>
+                                    <li><a href="add-horse-ammunition.html">Додати</a></li>
+                                </ul>
+                            </li>
+                            <li class="cm-submenu">
+                                <a>Інша амуніція для вершника<span class="caret"></span></a>
+                                <ul>
+                                    <li><a href="all-rider-ammunition.html">Переглянути</a></li>
+                                    <li><a href="add-rider-ammunition.html">Додати</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header id="cm-header">
+            <nav class="cm-navbar cm-navbar-primary">
+                <div class="btn btn-primary md-menu-white hidden-md hidden-lg" data-toggle="cm-menu"></div>
+                <div class="cm-flex">
+                    <h1>Головна</h1> 
+                </div>
+                 <div class="pull-right">
+                    <div><a href="login.html" class="btn btn-primary active" role="button" aria-pressed="true" id="loginButton">Вхід</a></div>
+                </div>
+                <div class="dropdown pull-right">
+                    <div class="popover cm-popover bottom">
+                        <div class="arrow"></div>
+                        <div class="popover-content">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item">
+                                    <h4 class="list-group-item-heading text-overflow">
+                                        <i class="fa fa-fw fa-envelope"></i> Nunc volutpat aliquet magna.
+                                    </h4>
+                                    <p class="list-group-item-text text-overflow">Pellentesque tincidunt mollis scelerisque. Praesent vel blandit quam.</p>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <h4 class="list-group-item-heading">
+                                        <i class="fa fa-fw fa-envelope"></i> Aliquam orci lectus
+                                    </h4>
+                                    <p class="list-group-item-text">Donec quis arcu non risus sagittis</p>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <h4 class="list-group-item-heading">
+                                        <i class="fa fa-fw fa-warning"></i> Holy guacamole !
+                                    </h4>
+                                    <p class="list-group-item-text">Best check yo self, you're not looking too good.</p>
+                                </a>
+                            </div>
+                            <div style="padding:10px"><a class="btn btn-success btn-block" href="#">Show me more...</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown pull-right" id="log-out-menu">
+                    <button class="btn btn-primary md-account-circle-white" data-toggle="dropdown"></button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="login.html" id="log-out"><i class="fa fa-fw fa-sign-out"></i> Вихід</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div id="global" class="p-3 mb-2 bg-info text-white">
+            <div class="container-fluid p-3 mb-2 bg-info text-white">
+                <h2 style="margin-top:0;"></h2> 
+                <p ><em>"Їздити верхи може навчитися кожен, бо верхова їзда це-майстерність. Але досягти її може тільки той, хто засвоїв всю систему навчання, яка починається з першої спроби вершника утриматися в сідлі і триває під час довгих і наполегливих тренувань. Верхова їзда прекрасна сама по собі і може стати мистецтвом. Кожному приємно вважати себе майстром своєї справи. Але ним може стати тільки той, хто не шкодує ні сил, ні часу для відточування майстерності, наполегливо домагається взаємодії з конем, осягаючи всі ті премудрості, якими зобов'язаний володіти майстер верхової їзди. Уміння їздити верхи на коні - не чорна магія, цьому може навчитися кожен. Гармонія між вершником і конем прекрасна, досягнення її і є кінцевою метою виїздки коня. "</em></p>
+
+<p class="text-right"><strong>В. Мюзелер</strong></p>
+            </div>
+            <div class="container-fluid p-3 mb-2 bg-info text-white">
+                <div class="row cm-fix-height">
+                    <div class="col-sm-4">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <img src="images/horse.png" alt="Less support" class="img-responsive">
+                                <br>
+                                <p>На нашому сайті ви зможете знайти для себе найкращого коня, а також продати своїх коней у хороші руки</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <img src="images/%D1%81%D1%96%D0%B4%D0%BB%D0%BE.jpg" class="img-responsive">
+                                <br>
+                                <p>Ми будемо раді допомогти Вам придбати амуніцію, яка підходить саме для Вас</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <img src="images/hqdefault.jpg" alt="Components" class="img-responsive">
+                                <br>
+                                <p>Ми сподіваємося, що допомогли Вам знайти саме те, що Вас цікавить. А також зекономили Ваш час на пошук. Якщо у Вас з'явились питання, пропозиції або зауваження, обов'язково пишіть листи на нашу електронну пошту for.rider.shop@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Контакти</div>
+                    <p class="text-center text-primary"> Електронна пошта : for.rider.shop@gmail.com</p>
+                    <p class="text-center text-primary"> Адреса : м.Львів вул.Пулюя,29</p>
+                    <p class="text-center text-primary"> Телефон : +380968404150</p>
+                    
+                </div>
+            <footer class="cm-footer "><span class="pull-left">Connected as </span><span class="pull-right">&copy; FOR RIDER</span></footer>
+        </div>
+        <script src="js/lib/jquery-2.1.3.min.js"></script>
+        <script src="js/jquery.mousewheel.min.js"></script>
+        <script src="js/jquery.cookie.min.js"></script>
+        <script src="js/fastclick.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/clearmin.min.js"></script>
+        <script src="js/demo/home.js"></script>
+         <script src="index.js"></script>
+        </div>
+    </body>
+</html>

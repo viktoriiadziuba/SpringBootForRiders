@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-clearmin.min.css">
+        <link rel="stylesheet" type="text/css" href="css/roboto.css">
+        <link rel="stylesheet" type="text/css" href="css/material-design.css">
+        <link rel="stylesheet" type="text/css" href="css/small-n-flat.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <title>Реєстрація</title>
+    <style></style>
+  </head>
+  
+  <body class="cm-no-transition cm-1-navbar">
+   
+    <form class="form-horizontal" id="registerForm">
+<fieldset>
+
+<legend class="p-3 mb-2 bg-primary text-white text-center">Реєстрація</legend>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Логін</label>  
+  <div class="col-md-4">
+  <input id="login" name="textinput" type="text" placeholder="" class="form-control input-md"> 
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Електронна пошта</label>  
+  <div class="col-md-4">
+  <input id="email" name="textinput" type="text" placeholder="" class="form-control input-md">
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Пароль</label>  
+  <div class="col-md-4">
+  <input id="password" name="textinput" type="password" placeholder="" class="form-control input-md">
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Підтвердження паролю</label>  
+  <div class="col-md-4">
+  <input id="password2" name="textinput" type="password" placeholder="" class="form-control input-md">
+  </div>
+</div>
+<!--
+		<div class="col-sm-4">
+		    
+		    <label>Current Password</label>
+		    <div class="form-group pass_show"> 
+                <input type="password" value="faisalkhan@123" class="form-control" placeholder="Current Password"> 
+            </div> 
+		       <label>New Password</label>
+            <div class="form-group pass_show"> 
+                <input type="password" value="faisal.khan@123" class="form-control" placeholder="New Password"> 
+            </div> 
+		       <label>Confirm Password</label>
+            <div class="form-group pass_show"> 
+                <input type="password" value="faisal.khan@123" class="form-control" placeholder="Confirm Password"> 
+            </div> 
+            
+		</div> 
+-->
+
+ <div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Ім'я</label>  
+  <div class="col-md-4">
+  <input id="firstName" name="textinput" type="text" placeholder="" class="form-control input-md">
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Прізвище</label>  
+  <div class="col-md-4">
+  <input id="lastName" name="textinput" type="text" placeholder="" class="form-control input-md">
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Номер телефону +38</label>  
+  <div class="col-md-4">
+  <input id="phoneNumber" name="textinput" type="text" placeholder="" class="form-control input-md">
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="singlebutton"></label>
+  <div class="col-md-4">
+    <button id="registerButton" name="singlebutton" class="btn btn-primary">Зареєструватися</button>
+  </div>
+</div>
+
+</fieldset>
+</form> 
+   <script src="js/jquery.min.js"> </script>
+  <script>
+      let serverUrl = 'http://localhost:7777/auth/';
+      
+      $(document).ready(function(){
+          $('#registerForm').submit(function(e){
+            e.preventDefault();
+         $('#email').keyup(function(){
+        console.log($(this).val());
+        let email = $(this).val();
+        
+        $.get('http://localhost:7777/' + 'auth/check-email?email=' + email, function(data, status){
+            console.log(data);
+        });
+    })
+              register();
+             
+              
+              
+          });
+      });
+
+      
+      function register(){
+           let password = $('#password').val();
+        let confirmPassword = $('#password2').val();
+
+        if (password == confirmPassword ){
+          let user = {
+              firstName: $('#firstName').val(),
+              email: $('#email').val(),
+              lastName: $('#lastName').val(),
+              username: $('#login').val(),
+              password: $('#password').val(),
+              phoneNumber: $('#phoneNumber').val()
+              
+          }
+          
+          $.ajax({
+              url: serverUrl + 'signup',
+              method: 'POST',
+              data: JSON.stringify(user),
+              contentType: 'application/json',
+              complete: function(data) {
+                  if(data.status == 500){
+                      alert('Змініть логін або електронну пошту. Користувач з такими даними вже існує');
+                  }
+                  if(data.status == 201){
+                      $(location).attr('href', 'login.html');
+                  }
+              }
+          })
+             }else {
+            alert('Паролі не співпадають');
+        }
+      }
+      
+      </script>
+   
+  </body>
+</html>

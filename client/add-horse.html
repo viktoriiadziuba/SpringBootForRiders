@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap-clearmin.min.css">
+        <link rel="stylesheet" type="text/css" href="css/roboto.css">
+        <link rel="stylesheet" type="text/css" href="css/material-design.css">
+        <link rel="stylesheet" type="text/css" href="css/small-n-flat.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <title>Додати коня</title>
+    </head>
+    <body class="cm-no-transition cm-1-navbar">
+        <div id="cm-menu">
+            <nav class="cm-navbar cm-navbar-primary">
+                <div class="btn btn-primary md-menu-white" data-toggle="cm-menu"></div>
+            </nav>
+            <div id="cm-menu-content">
+                <div id="cm-menu-items-wrapper">
+                    <div id="cm-menu-scroller">
+                        <ul class="cm-menu-items">
+                            <li class="active"><a href="index.html" class="sf-house">Головна</a></li>
+                              <li class="cm-submenu">
+                                <a>Коні<span class="caret"></span></a>
+                                <ul>
+                                    <li><a href="all-horses.html">Переглянути</a></li>
+                                    <li><a href="add-horse.html">Додати</a></li>
+                                </ul>
+                            </li>
+                            <li class="cm-submenu">
+                                <a>Сідла<span class="caret"></span></a>
+                                <ul>
+                                    <li><a href="all-saddles.html">Переглянути</a></li>
+                                    <li><a href="add-saddle.html">Додати</a></li>
+                                </ul>
+                            </li>
+                            <li class="cm-submenu">
+                                <a>Взуття<span class="caret"></span></a>
+                                <ul>
+                                    <li><a href="all-boots.html">Переглянути</a></li>
+                                    <li><a href="add-boots.html">Додати</a></li>
+                                </ul>
+                            </li>
+                            <li class="cm-submenu">
+                                <a>Штани<span class="caret"></span></a>
+                                <ul>
+                                    <li><a href="all-breeches.html">Переглянути</a></li>
+                                    <li><a href="add-breeches.html">Додати</a></li>
+                                </ul>
+                            </li>
+                            <li class="cm-submenu">
+                                <a>Краги<span class="caret"></span></a>
+                                <ul>
+                                    <li><a href="all-half-chaps.html">Переглянути</a></li>
+                                    <li><a href="add-half-chaps.html">Додати</a></li>
+                                </ul>
+                            </li>
+                            <li class="cm-submenu">
+                                <a>Шоломи<span class="caret"></span></a>
+                                <ul>
+                                    <li><a href="all-helmets.html">Переглянути</a></li>
+                                    <li><a href="add-helmet.html">Додати</a></li>
+                                </ul>
+                            </li>
+                            <li class="cm-submenu">
+                                <a>Інша амуніція для коня<span class="caret"></span></a>
+                                <ul>
+                                    <li><a href="all-horse-ammunition.html">Переглянути</a></li>
+                                    <li><a href="add-horse-ammunition.html">Додати</a></li>
+                                </ul>
+                            </li>
+                            <li class="cm-submenu">
+                                <a>Інша амуніція для вершника<span class="caret"></span></a>
+                                <ul>
+                                    <li><a href="all-rider-ammunition.html">Переглянути</a></li>
+                                    <li><a href="add-rider-ammunition.html">Додати</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header id="cm-header">
+            <nav class="cm-navbar cm-navbar-primary">
+                <div class="btn btn-primary md-menu-white hidden-md hidden-lg" data-toggle="cm-menu"></div>
+                <div class="cm-flex">
+                    <h1>Додати коня</h1> 
+                </div>
+                 <div class="pull-right">
+                    <div><a href="login.html" class="btn btn-primary active" role="button" aria-pressed="true" id="loginButton">Вхід</a></div>
+                </div>
+                <div class="dropdown pull-right">
+                    <div class="popover cm-popover bottom">
+                        <div class="arrow"></div>
+                        <div class="popover-content">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item">
+                                    <h4 class="list-group-item-heading text-overflow">
+                                        <i class="fa fa-fw fa-envelope"></i> Nunc volutpat aliquet magna.
+                                    </h4>
+                                    <p class="list-group-item-text text-overflow">Pellentesque tincidunt mollis scelerisque. Praesent vel blandit quam.</p>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <h4 class="list-group-item-heading">
+                                        <i class="fa fa-fw fa-envelope"></i> Aliquam orci lectus
+                                    </h4>
+                                    <p class="list-group-item-text">Donec quis arcu non risus sagittis</p>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <h4 class="list-group-item-heading">
+                                        <i class="fa fa-fw fa-warning"></i> Holy guacamole !
+                                    </h4>
+                                    <p class="list-group-item-text">Best check yo self, you're not looking too good.</p>
+                                </a>
+                            </div>
+                            <div style="padding:10px"><a class="btn btn-success btn-block" href="#">Show me more...</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown pull-right">
+                    <button class="btn btn-primary md-account-circle-white" data-toggle="dropdown"></button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a id="log-out"><i class="fa fa-fw fa-sign-out"></i> Вихід</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div id="global">
+           <form class="form-horizontal" id="createHorseForm">
+<fieldset>
+
+<legend> </legend>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Кличка</label>  
+  <div class="col-md-4">
+  <input id="horseName" name="textinput" type="text" placeholder="" class="form-control input-md">
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Порода</label>  
+  <div class="col-md-4">
+  <input id="breedHorse" name="textinput" type="text" placeholder="" class="form-control input-md">
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Ріст</label>  
+  <div class="col-md-4">
+  <input id="heightHorse" name="textinput" type="text" placeholder="" class="form-control input-md">
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Масть</label>  
+  <div class="col-md-4">
+  <input id="coatColorHorse" name="textinput" type="text" placeholder="" class="form-control input-md">
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Рік народження</label>  
+  <div class="col-md-4">
+  <input id="yearOfBirthHorse" name="textinput" type="text" placeholder="" class="form-control input-md">
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Опис</label>  
+  <div class="col-md-4">
+ <textarea id="descriptionHorse" name="textinput" type="text" placeholder="" class="form-control input-lg"></textarea>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Ціна</label>  
+  <div class="col-md-4">
+  <input id="priceHorse" name="textinput" type="text" placeholder="" class="form-control input-md">
+  </div>
+    </div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="singlebutton"></label>
+  <div class="col-md-4">
+    <button id="addHorseButton" name="singlebutton" class="btn btn-primary">Додати</button>
+    </div>  
+            <div class="container-fluid">
+            <footer class="cm-footer"><span class="pull-left">Connected as </span><span class="pull-right">&copy; FOR RIDER</span></footer>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/add-horse.js"></script>
+         <script src="js/lib/jquery-2.1.3.min.js"></script>
+        <script src="js/jquery.mousewheel.min.js"></script>
+        <script src="js/jquery.cookie.min.js"></script>
+        <script src="js/fastclick.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/clearmin.min.js"></script>
+        <script src="js/demo/home.js"></script>
+        </div>  
+               </fieldset>
+            </form>
+        </div>     
+    </body>
+</html>
